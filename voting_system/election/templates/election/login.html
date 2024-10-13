@@ -1,6 +1,6 @@
 {% extends 'voting/base.html' %}
 
-{% block title %}Election Officer Login{% endblock %}
+{% block title %}Login{% endblock %}
 
 {% block extra_css %}
 <style>
@@ -28,7 +28,7 @@
 
 {% block content %}
 <div class="login-container mt-5">
-    <h1 class="text-center mb-4">Election Officer Login</h1>
+    <h1 class="text-center mb-4">Login</h1>
     <form method="POST" class="mt-4">
         {% csrf_token %}
         <div class="form-group">

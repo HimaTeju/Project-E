@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container">
-    <h2 class="text-center my-4">Vote for Your Candidate</h2>
+    <h2 class="text-center my-4">Vote for Your Favorite Player</h2>
     <form method="POST" action="{% url 'voting_interface' %}">
         {% csrf_token %}
         <div class="form-group mb-3">
