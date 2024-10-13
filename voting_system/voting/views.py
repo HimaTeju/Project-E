@@ -98,7 +98,7 @@ import datetime
 
 def voting_interface(request):
     # Fetch all candidates to display them on the page
-    candidates = Candidate.objects.all()
+    candidates = Candidate.objects.all().order_by('forum')
     qr_code = request.GET.get('qr_code')
 
     if request.method == 'POST':
